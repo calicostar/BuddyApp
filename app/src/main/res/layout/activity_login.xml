@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#A9BEE2"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/buddyappbanner"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="0dp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="#A9BEE2"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Please log in using your username and password. Kindly provide the required credentials."
+                android:textStyle="bold"
+                android:textColor="#D3D3D3"
+                android:textSize="15dp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/username1"
+                android:hint="Username"
+                android:textSize="25dp"
+                android:textColorHint="#D3D3D3"
+                android:background="@drawable/edittextbackground"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/password1"
+                android:hint="Password"
+                android:textSize="25dp"
+                android:textColorHint="#D3D3D3"
+                android:background="@drawable/edittextbackground"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:paddingLeft="20dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="220dp"
+                android:layout_height="60dp"
+                android:id="@+id/login"
+                android:text="Login"
+                android:textSize="20dp"
+                android:backgroundTint="@android:color/black"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

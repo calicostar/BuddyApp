@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Buddyapp" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="android:statusBarColor">#A9BEE2</item>
+    </style>
+
+    <style name="Theme.Buddyapp" parent="Base.Theme.Buddyapp" />
+</resources>

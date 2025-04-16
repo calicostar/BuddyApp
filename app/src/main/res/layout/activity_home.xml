@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingTop="30dp"
+    android:background="#A9BEE2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/buddyappslider"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="0dp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="8dp">
+
+        <TextView
+            android:id="@+id/greetingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:letterSpacing="0.1"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp">
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search For Friends..."
+            android:background="@color/backgroundLight"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textColor="@color/textPrimary"
+            android:textSize="16sp"
+            android:drawablePadding="8dp"
+            android:imeOptions="actionSearch"
+            android:inputType="text" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- ListView in CardView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <ListView
+                android:id="@+id/friendsListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/divider"
+                android:dividerHeight="1dp"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Add Friend, Go to Analysis, and Logout Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Add Friend Button -->
+        <Button
+            android:id="@+id/addFriendButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add Friend"
+            style="@style/ButtonStyle"
+            android:backgroundTint="@color/buttonPrimary"/>
+
+        <!-- Go to Analysis Button -->
+        <Button
+            android:id="@+id/btnGoToAnalysis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Go to Analysis"
+            android:backgroundTint="@color/buttonSecondary"
+            style="@style/ButtonStyle"/>
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Logout"
+            style="@style/ButtonStyle"
+            android:backgroundTint="#D22B2B"/>
+    </LinearLayout>
+
+</LinearLayout>
